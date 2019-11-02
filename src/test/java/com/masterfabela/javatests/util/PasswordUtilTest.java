@@ -1,8 +1,9 @@
+package com.masterfabela.javatests.util;
 
-import com.masterfabela.testingjava.util.PasswordUtil;
+import com.masterfabela.javatests.util.PasswordUtil;
 import org.junit.Test;
 
-import static com.masterfabela.testingjava.util.PasswordUtil.SecurityLevel.*;
+import static com.masterfabela.javatests.util.PasswordUtil.SecurityLevel.*;
 import static org.junit.Assert.assertEquals;
 
 public class PasswordUtilTest {

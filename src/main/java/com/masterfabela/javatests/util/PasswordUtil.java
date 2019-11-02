@@ -1,12 +1,12 @@
-package com.masterfabela.testingjava.util;
+package com.masterfabela.javatests.util;
 
-public class PasswordUtil {
+class PasswordUtil {
 
     public enum SecurityLevel {
         WEAK, MEDIUM, STRONG
     }
 
-    public static SecurityLevel assesPasword(String password) {
+    static SecurityLevel assesPasword(String password) {
         if (password.length() < 8){
             return SecurityLevel.WEAK;
         }
