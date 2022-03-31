@@ -1,6 +1,5 @@
 package com.masterfabela.javatests.util;
 
-import com.masterfabela.javatests.util.PasswordUtil;
 import org.junit.Test;
 
 import static com.masterfabela.javatests.util.PasswordUtil.SecurityLevel.*;
