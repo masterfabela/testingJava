@@ -2,8 +2,8 @@ package com.masterfabela.javatests.player;
 
 class Player {
 
-    private Dice dice;
-    private int minNumberToWin;
+    private final Dice dice;
+    private final int minNumberToWin;
 
     Player(Dice dice, int minNumberToWin) {
         this.dice = dice;
@@ -12,6 +12,6 @@ class Player {
 
     boolean play(){
         int diceNumber = dice.roll();
-        return diceNumber > minNumberToWin;
+        return diceNumber >= minNumberToWin;
     }
 }
