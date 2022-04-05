@@ -145,3 +145,6 @@ fabric.properties
 /.idea/.name
 /testingJava.iml
 /.idea/misc.xml
+/.idea/jarRepositories.xml
+/.idea/modules.xml
+/.idea/testingJava.iml

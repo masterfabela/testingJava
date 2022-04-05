@@ -2,7 +2,7 @@ package com.masterfabela.javatests.util;
 
 class StringUtil {
 
-    static String repeat(String str, int times){
+    public static String repeat(String str, int times){
         if (times < 0){
             throw new IllegalArgumentException("negative times are not allowed");
         }
