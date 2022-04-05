@@ -2,7 +2,7 @@ package com.masterfabela.javatests.payments;
 
 class PaymentProcessor {
 
-    private PaymentGateway paymentGateway;
+    private final PaymentGateway paymentGateway;
 
     PaymentProcessor(PaymentGateway paymentGateway) {
         this.paymentGateway = paymentGateway;

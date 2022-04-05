@@ -24,4 +24,5 @@ public class PaymentProcessorTest {
         PaymentProcessor paymentProcessor = new PaymentProcessor(paymentGateway);
         assertFalse(paymentProcessor.makePayment(1000));
     }
+
 }

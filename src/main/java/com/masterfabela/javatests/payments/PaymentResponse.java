@@ -6,7 +6,7 @@ class PaymentResponse {
         OK, ERROR
     }
 
-    private PaymentStatus status;
+    private final PaymentStatus status;
 
     PaymentResponse(PaymentStatus status) {
         this.status = status;
