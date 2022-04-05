@@ -1,5 +1,7 @@
 package com.masterfabela.javatests.util;
 
+import org.jetbrains.annotations.NotNull;
+
 class StringUtil {
 
     public static String repeat(String str, int times){
@@ -11,5 +13,9 @@ class StringUtil {
             result.append(str);
         }
         return result.toString();
+    }
+
+    public static boolean isEmpty(String word) {
+        return word == null || word.trim().isEmpty();
     }
 }

@@ -1,5 +1,6 @@
 package com.masterfabela.javatests.player;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -7,9 +8,15 @@ import static org.junit.Assert.*;
 
 public class PlayerTest {
 
+    private Dice dice;
+
+    @Before
+    public void setup(){
+        dice = Mockito.mock(Dice.class);
+    }
+
     @Test
     public void looses_when_dice_number_is_too_low(){
-        Dice dice = Mockito.mock(Dice.class);
         Mockito.when(dice.roll()).thenReturn(2);
         Player player = new Player(dice, 3);
         assertFalse(player.play());
@@ -17,7 +24,6 @@ public class PlayerTest {
 
     @Test
     public void wins_when_dice_number_is_same(){
-        Dice dice = Mockito.mock(Dice.class);
         Mockito.when(dice.roll()).thenReturn(2);
         Player player = new Player(dice, 2);
         assertTrue(player.play());
@@ -25,7 +31,6 @@ public class PlayerTest {
 
     @Test
     public void wins_when_dice_number_big(){
-        Dice dice = Mockito.mock(Dice.class);
         Mockito.when(dice.roll()).thenReturn(4);
         Player player = new Player(dice, 3);
         assertTrue(player.play());
